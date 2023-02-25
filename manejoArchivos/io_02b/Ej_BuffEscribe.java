@@ -12,7 +12,7 @@ public class Ej_BuffEscribe {
         try(BufferedWriter bw=new BufferedWriter(new FileWriter("../prueba_buffered.txt"))){
             
             bw.write(texto1);
-            bw.newLine();
+            bw.newLine();   //aclarado acá que no puedo hacer +"\n" como si trabajara con toString()
             bw.write(texto2);
             
         }catch(IOException e){
